@@ -94,6 +94,7 @@
 009400     IF SQLCODE NOT = 0                                           00940001
 009500         MOVE 'N' TO VALID-CURSOR-SW.                             00950001
 009600*                                                                 00960001
+      *
 009700 130-DISPLAY-CUSTOMER-INFO.                                       00970001
 009800     PERFORM 140-FETCH-CUSTOMER-ROW.                              00980001
 009900     IF NOT END-OF-CUSTOMERS                                      00990001
